@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,12 +12,12 @@
             background-repeat: no-repeat;
             font-family: 'Permanent Marker', cursive;
             color: white;
-            background-position: unset;
+            background-position: fill;
             background-size: cover;
             /* filter:blur(8px);
             -webkit-filter:blur(8px); */
-            }
-            
+        }
+
         .left {
 
             padding: 0px;
@@ -45,7 +45,7 @@
             margin-left: 118px;
             font-size: 80px;
             margin-top: -80px;
-        }   
+        }
 
 
         .mid {
@@ -109,12 +109,13 @@
             cursor: pointer;
             border: none;
         }
-        .mid2{
-            color:rgb(223, 226, 31);
-            font-size:51px;
+
+        .mid2 {
+            color: rgb(223, 226, 31);
+            font-size: 51px;
             margin-left: 304px;
         }
-        
+
         /* #textarea{
             position:relative;
             left:20%;
@@ -124,6 +125,29 @@
             color:white;
 
         } */
+        .main {
+            /* position:absolute;
+            left:2800px;
+            top:983px;
+            /* display:inline-block; */
+            /* -webkit-filter:blur(8px); */
+            /* filter:blur(8px);
+            image-resolution:45% 45%; */
+            display: inline-block;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        #main2 {
+            position: relative;
+            bottom: -107px;
+            left: -729px;
+            animation-name: 'main2';
+            animation-duration: 10s;
+            animation-iteration-count: 5;
+        }
+
+        
     </style>
 </head>
 
@@ -150,11 +174,20 @@
     </header>
     <div class="mid2">
         <h2>This is the best gym of your area.</h2>
+
     </div>
     <main class="main">
-           <div>
-
-           </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Tempore, illum quos placeat sapiente <br>
+            dolorum modi fugiat quia exercitationem <br> nostrum, accusamus, atque provident cum deleniti <br> sit ipsum
+            dignissimos velit voluptatem assumenda! Molestiae <br> nulla ea rem laborum impedit. Rem, dolorem? A,
+            tempore.
+        </div>
+        <div id="main2">img{
+            border-radius:0%;
+            -webkit-transition: -webkit-transform}
+            <img src="mid2.jpg" height="800">
+        </div>
     </main>
 </body>
 
