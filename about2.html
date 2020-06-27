@@ -142,15 +142,25 @@
             position: relative;
             bottom: -107px;
             left: -729px;
-            animation-name: 'main2';
-            animation-duration: 10s;
-            animation-iteration-count: 5;
+
         }
 
         
     </style>
 </head>
+    <!-- <script>
+        function callus(){
+            alert("This is the Contact Number: +91 8896387394");
+            // <button onclick="callus()">Another one</button>
+        }
 
+        function over(){
+            window.document.write("Mouse over");
+        }
+        function out(){
+            window.document.write("Mouse out");
+        }
+    </script> -->
 <body>
     <header>
         <div class="left">
@@ -168,8 +178,8 @@
             </ul>
 
             <div class="right">
-                <button class="btn">Call Us Now</button>
-                <button class="btn">Email Us</button>
+                <button class="btn" onclick="callus()">Call Us Now</button>
+                <button class="btn" onmouseover="over()" onmouseout="out()">Email Us</button>
             </div>
     </header>
     <div class="mid2">
@@ -183,9 +193,7 @@
             dignissimos velit voluptatem assumenda! Molestiae <br> nulla ea rem laborum impedit. Rem, dolorem? A,
             tempore.
         </div>
-        <div id="main2">img{
-            border-radius:0%;
-            -webkit-transition: -webkit-transform}
+        <div id="main2">
             <img src="mid2.jpg" height="800">
         </div>
     </main>
