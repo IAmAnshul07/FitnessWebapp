@@ -21,8 +21,9 @@
         background-size: cover;
         /* background: url('back.jpg'); */
         background-image: url('back.jpg');
-
-
+        max-width: 100%;
+        height: auto;
+        
     }
 
     .left {
@@ -51,6 +52,7 @@
         right: 65px;
         margin: 20px;
     }
+            
 
     .navbar {
         display: inline-block;
@@ -99,6 +101,7 @@
         /* font-size: 30px; */
         border-radius: 70px;
         font-family: 'Permanent Marker', cursive;
+        
     }
 
     .btn:hover {
@@ -194,16 +197,16 @@
         border-radius: 70px;
         font-family: 'Permanent Marker', cursive;
     }
-    .submitbtn{
+     .submitbtn{
         margin: 27px -14px;
         filter: invert(100%);
         font-size: 71%;
-        /* font-size: 30px; */
+        font-size: 30px;
         border-radius: 31px;
-        font-family: 'Permanent Marker', cursive;
-        width: 20%;
+        font-family: 'Permanent Marker', cursive; 
+        width: 20%; 
 
-    } 
+ }  
 </style>
 
 <body>
@@ -225,7 +228,7 @@
 
         <!-- Buttons -->
         <div class="right">
-            <button class="btn" >Call Us Now</button>
+            <button class="btn" onclick="Myfunction ">Call Us Now</button>
             <button class="btn">Email Us</button>
         </div>
         <div>
@@ -234,6 +237,12 @@
     </header>
     <div class="container">
         <h4>Join the best gym of your locality</h4>
+        <script>
+            function Myfunction(){
+                console.log("Clicked");
+                alert("Clicked")
+            }
+        </script>
         <form action="submit.php">
             <div class="formfill">
                 <input type="text" name="" class="container2" placeholder="Enter Your Name">
@@ -247,7 +256,7 @@
             <div class="formfill">
                 <input type="text" name="" class="container2" placeholder="Contact Number">
             </div>
-            <button class="subbtn">Submit</button>
+            <button class="subbtn" onclick="Myfunction()">Submit</button>
         </form>
 
         <!-- <img src="off1.jfif" alt="" sizes="200" srcset="" class="off"> -->
